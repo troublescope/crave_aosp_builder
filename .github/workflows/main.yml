@@ -16,7 +16,7 @@ on:
         default: 'LineageOS 20.0'
         type: choice
         options:
-          - 'LineageOS 20.0'
+          - 'crDroid 14.0'
           - 'crDroid 14.0'
           - 'ArrowOS 13.1'
           - 'DerpFest 13.0'
@@ -30,19 +30,19 @@ on:
       LOCAL_MANIFEST:
         description: "Personal local manifest [repository or raw]:"
         required: true
-        default: 'https://github.com/sounddrill31/local_manifests'
+        default: 'https://github.com/troublescope/local_manifests'
       LOCAL_MANIFEST_BRANCH:
         description: "Personal local manifest's branch:"
         required: false
-        default: 'lineage-oxygen'
+        default: 'main'
       DEVICE_NAME:
         description: "Device's codename:"
         required: true
-        default: "oxygen"
+        default: "rosemary"
       PRODUCT_NAME:
         description: "Product to build:"
         required: true
-        default: "lineage_oxygen"
+        default: "lineage_rosemary"
       BUILD_COMMAND:
         description: 'Command to be used for compiling:'
         required: true
@@ -59,7 +59,7 @@ on:
       CLEAN_BUILD:
         description: 'Build with a clean workspace?'
         required: true
-        default: 'no'
+        default: 'yes'
         type: choice
         options: 
         - 'yes'
